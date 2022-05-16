@@ -1,0 +1,2152 @@
+/*
+GERAL
+*/
+*{
+    margin: 0;
+    font-family: sans-serif
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: #b0b1b2;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Roboto Slab" Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/*
+NAVEGAÇÂO
+*/
+
+nav .linux {
+    background-color: #4d4d4d;
+    opacity: 0.8;
+    /*margin-right: 30vw;*/
+    padding-right: 100px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+    padding: 5px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-family: Heveltica;
+}
+
+nav .linux {
+    background-color: #4d4d4d;
+    opacity: 0.8;
+    margin-right: 30vw;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-bottom: 1vh;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+}
+
+.menu ul li a:hover {
+    background-color: #702749;
+    transition: 0.5s;
+    opacity: 0.9;
+    width: 95%;
+    top: 50%;
+    /*padding: 10px;*/
+    /*padding-left: 2vw;*/
+}
+
+.menu ul ul li a {
+    font-size: 18px;
+    font-weight: 300;
+    /*padding: 10px;*/
+    background-color: #333030;
+    opacity: 0.9;
+    height: auto;
+}
+
+.menu ul ul { 
+    display: none;
+}
+
+.menu ul .itensservicos.mostra {
+    display: block;    
+}
+
+.menu ul li a span {
+    font-size: 25px;
+    position: absolute;
+    nav-down: 30px;
+}
+
+/*.menu ul ul li:hover > ul {
+    display: block;
+}*/
+
+.menu ul ul ul {
+    margin-right: 100%;
+    margin-top: 1.1vh;
+}
+
+.menu ul ul .itensnetplan.mostra {
+    display: block;    
+}
+
+.menu ul ul .hrbaixo {
+    margin-top: -1vh;
+    margin-bottom: 1.5vh;
+}
+
+.menu li a span {
+    margin-left: 1vh;
+}
+
+.menu ul ul li a:hover {
+    background-color: #5f1d3c;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+/* NAVEGAÇÂO
+*/
+
+header {
+    background-image: url('../Imagens/ubuntuwallpaper.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: -5px;
+    opacity: 0.8;
+}
+
+header p {
+    margin-bottom: 2em;
+    padding-top: 150px;
+}
+
+header h1 {
+    color: #f1f1f1;
+    
+}
+
+header p {
+    padding-top: -35;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;  
+}
+
+.img-slider {
+    position: relative;
+    width: 800px;
+    height: 100px;
+    margin-left: 0.1px;
+    margin-top: 50px;
+    background: #b0b1b2;
+
+}
+
+.img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img {
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.img-slider .slide .info {
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+}
+
+.img-slider .slide .info h2 {
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.img-slider .slide .info p {
+    color: #fff;
+    background: rgba(0,0,0,0.1);
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.img-slider .navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .navigation .btn.active {
+    background: #2696E9;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.margem {
+    margin: 600px;
+}
+
+/* SOBRE MENU
+*/
+
+#descsobre {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descsobre #gabriel {
+    width: 20vh;
+    margin-left: 0.5vh;
+}
+
+#descsobre .nomegabriel {
+    margin-left: 2.5vh;
+    margin-top: -5vh;
+    margin-bottom: 1vh;
+}
+
+#descsobre #matheus {
+    width: 20vh;
+    margin-left: 3vh;
+}
+
+#descsobre .nomematheus {
+    margin-left: 2.5vh;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+
+}
+
+#descsobre .divisoria {
+    margin-top: 5vh;
+}
+
+/*
+SOBRE MAIS
+*/
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: center;
+    color: white;
+}
+
+#sobremais {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#sobremais ol li {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/*#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    color: #f1f1f1;
+    margin-right: 15vw;
+    text-shadow: #181818;
+    font-weight: 600; 
+}*/
+
+/*#sobre h1 {
+    color: #f1f1f1;
+    text-shadow: #181818;
+    margin-top: -2vh;
+    margin-bottom: 6vw;
+    font-family: 'Kuro Regular';
+}*/
+
+
+#sobre button {
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: -15px;
+}
+
+#sobre button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#servicos h2 {
+    margin-top: -50px;
+}
+
+#servicos h3 {
+    font-size: 24px;
+}
+
+#servicos p {
+    font-size: 20px;
+}
+
+
+/* SERVIÇOS HOSTS
+*/
+
+#hosts {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hosts div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#deschosts {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#hosts input, textarea {
+    width: 100%;
+    padding: 10px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#hosts label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#hosts label p {
+    text-align: left;
+}
+
+#hosts button {
+    margin-top: 1vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#hosts button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+
+#hosts h3 {
+    font-size: 22px;
+}
+
+#hosts p {
+    font-size: 20px;
+}
+
+/* SERVIÇO SERVIDOR SAMBA
+*/
+
+#samba {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#samba div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#descsamba {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#samba input, textarea {
+    width: 100%;
+    padding: 10px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#samba label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#samba label p {
+    text-align: left;
+}
+
+#samba button {
+    margin-top: 1vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+#samba button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+
+#samba h3 {
+    font-size: 22px;
+}
+
+#samba p {
+    font-size: 20px;
+}
+
+/*
+SERVIÇOS NETPLAN MANUAL E AUTOMÁTICO (DHCP)
+*/
+
+#netplan {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#netplan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#descnetplan {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descnetplan ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#netplan input, textarea {
+    width: 100%;
+    padding: 10px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#netplan label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#netplan label p {
+    text-align: left;
+}
+
+.radio {
+    font-size: 22px;
+    font-weight: 200;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    position: relative;
+    padding-left: 30px;
+    height: 2vh;
+    margin-left: -14vh;
+    margin-top: -5vh;
+    margin-bottom: -0.1vh;
+}
+
+.radio + .radio {
+    margin-left: 19vh;
+    margin-top: -1.8vh;
+    margin-bottom: 4vh;
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio span {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2.5px solid #7d2b51;
+    position: absolute;
+    left: -5px;
+    top: 2px;
+}
+
+.radio span:after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #7d2b51;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+#netplan button {
+    margin-top: 4vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#netplan button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+
+#netplan h3 {
+    font-size: 22px;
+}
+
+#netplan p {
+    font-size: 20px;
+}
+
+/*
+ICMP
+*/
+
+#icmp {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icmp div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#descicmp {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descicmp ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#icmp input, textarea {
+    width: 100%;
+    padding: 10px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#icmp label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#icmp label p {
+    text-align: left;
+}
+
+.radio {
+    font-size: 22px;
+    font-weight: 200;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    position: relative;
+    padding-left: 30px;
+    height: 2vh;
+    margin-left: -14vh;
+    margin-top: -5vh;
+    margin-bottom: -0.1vh;
+}
+
+.radio + .radio {
+    margin-left: 19vh;
+    margin-top: -1.8vh;
+    margin-bottom: 4vh;
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio span {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2.5px solid #7d2b51;
+    position: absolute;
+    left: -5px;
+    top: 2px;
+}
+
+.radio span:after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #7d2b51;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+#icmp button {
+    margin-top: 4vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#icmp button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+
+#icmp h3 {
+    font-size: 22px;
+}
+
+#icmp p {
+    font-size: 20px;
+}
+
+/*
+"CONTATO"
+*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/*
+FOOTER
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;  
+}
+
+/*
+FOOTER
+*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #4d4d4d;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .sec {
+    margin-right: 30px;   
+}
+
+footer .container .sec.aboutus {
+    width: 40%;
+}
+
+footer .container h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container p {
+    color: #999;
+    font-size: 16px;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    /*background: purple;*/
+}
+
+.sci .facebook a:hover {
+    background: #4267b2;
+}
+
+.sci .instagram a:hover {
+    background: #833AB4;
+}
+
+.sci .twitter a:hover {
+    background: #2aa9e0;
+}
+
+.sci .youtube a:hover {
+    background: #ff0000;
+}
+
+.sci li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+.quickLinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover {
+    color: #fff;
+}
+
+.contact {
+    width: calc(25% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #fff;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+
+/*
+POLITICA DE PRIVACIDADE
+*/
+
+#descpolitica {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descpolitica ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*
+TERMOS & CONDIÇÕES
+*/
+
+#desctermos {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#desctermos ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* QUEM SOMOS
+*/
+
+#descquem {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descquem img {
+    /*padding: 20px;*/
+    flex-direction: column;
+    text-align: left;
+    width: 50vh;
+    height: 40vh;
+    margin-left: -1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+#descquem ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* FAQ
+*/
+
+#descfaq {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descfaq ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descfaq img {
+    flex-direction: column;
+    text-align: left;
+    width: 50vh;
+    height: 40vh;
+    margin-left: -0.5vh;
+    margin-right: -0.5vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+#descfaq .TTL {
+    flex-direction: column;
+    text-align: left;
+    object-fit: cover;
+    width: 55vh;
+    height: 34.5vh;
+    margin-left: -3vh;
+    margin-right: -0.5vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+#descfaq .initcloud {
+    flex-direction: column;
+    text-align: left;
+    object-fit: contain;
+    width: 50vh;
+    height: 30vh;
+    margin-left: -0.8vh;
+    margin-right: -0.5vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+/* AJUDA
+*/
+
+#ajuda {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#ajuda h2 {
+    margin-top: -7vh;
+    text-align: center;
+    width: 100%;
+}
+
+#ajuda div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+    margin-bottom: 5vh;
+}
+
+#descajuda {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#ajuda input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+#ajuda input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+#ajuda input[type="checkbox"] + label:active:before {
+    transform: scale(0);
+
+}
+
+#ajuda input[type=checkbox]:checked + label:before {
+    background-color: mediumseagreen;
+    border-color: mediumseagreen;
+    color: #fff;
+}
+
+/*#ajuda input, textarea {
+    padding: 10px;
+    margin-bottom: 1em;
+    
+}*/
+
+#ajuda #ajudacaixa label {
+    margin-top: -4vh;
+}
+
+#ajuda input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid;
+}
+
+
+#ajuda label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#ajuda label p {
+    text-align: left;
+}
+#ajuda button {
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#ajuda button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+#ajuda h3 {
+    font-size: 20px;
+}
+
+#ajuda p {
+    font-size: 20px;
+}
+
+/* Carrossel MEDIA */
+
+@media (max-width: 620px) {
+
+    .img-slider {
+        width: 370px;
+        height: 375px;
+    }
+
+    .img-slider .slide .info {
+       padding: 10px 20px; 
+    }
+
+    .img-slider .slide .info h2 {
+        font-size: 30px;
+    }
+
+    .img-slider .slide .info p {
+        width: 80%;
+        font-size: 13px;
+    }
+
+    .img-slider .navigation {
+        top: 200px;
+
+    }
+
+}
+
+
+/*
+MEDIA QUERIES
+*/
+
+@media only screen and (min-width: 768px) {
+    
+/*
+NAVEGAÇÃO
+*/
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+nav ul {
+    flex-direction: row;
+    width: 70%;
+}
+
+nav .linux {
+    background-color: #4d4d4d;
+    opacity: 0.8;
+    margin-right: 0vw;
+}
+
+.menu ul ul li a {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+    background-color: #333030;
+    opacity: 0.9;
+    height: auto;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    margin-bottom: -1vh;
+}
+
+
+/*.menu ul ul li:hover > ul {
+    display: block;
+}*/
+
+.menu ul ul ul {
+    margin-right: 100%;
+    margin-top: 1.1vh;
+}
+
+.menu ul ul .itensnetplan.mostra {
+    display: block;    
+}
+
+.menu ul ul .hrbaixo {
+    margin-top: 1vh;
+    margin-bottom: 0.4vh;
+}
+
+    
+/*
+CABEÇALHO
+*/
+    
+header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../Imagens/ubuntuwallpaper1.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-right: 0em;
+    opacity: 0.8;
+}
+
+/* SOBRE MENU
+*/
+
+#descsobre {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descsobre #gabriel {
+    width: 30vh;
+    margin-left: 0.5vh;
+}
+
+#descsobre .nomegabriel {
+    margin-left: 2.5vh;
+    margin-top: -5vh;
+    margin-bottom: 1vh;
+}
+
+#descsobre #matheus {
+    width: 30vh;
+    margin-left: 3vh;
+}
+
+#descsobre .nomematheus {
+    margin-left: 2.5vh;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+
+}
+
+#descsobre .divisoria {
+    margin-top: 5vh;
+}
+
+/*
+SOBRE
+*/
+    
+#sobre {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+    max-width: 100vw;
+    box-sizing: border-box;
+    color: white;
+}
+
+/*#sobre h1 {
+    color: #f1f1f1;
+    text-shadow: #181818;
+    margin-top: 10vh;
+    font-family: 'Kuro Regular';
+    margin-right: 50vw;
+    font-size: 42px;
+}*/
+
+/*#sobre p {
+    color: #f1f1f1;
+    text-shadow: #181818;
+    margin-top: -20vh;
+    margin-left: -5vw;
+}*/
+
+#sobremais {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+#sobremais ol li{
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+#sobre button {
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 3px;
+    margin-top: 28vh;
+}
+
+/*
+SERVIÇOS HOME
+*/
+    
+#servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+    
+#servicos h2 {
+    text-align: center;
+    width: 100%;
+}
+    
+#servicos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+#servicos h3 {
+    font-size: 18px;
+}
+
+#servicos p {
+    font-size: 18px;
+}
+
+/*
+SERVIÇOS HOSTS
+*/
+    
+#hosts {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+    
+#hosts h2 {
+    text-align: center;
+    width: 100%;
+}
+    
+#hosts div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+    margin-bottom: 5vh;
+}
+    
+#deschosts {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    
+/*#ajuda input, textarea {
+padding: 10px;
+margin-bottom: 1em;
+        
+}*/
+    
+#hosts input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid;
+}
+    
+    
+#hosts label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+    
+#hosts label p {
+    text-align: left;
+}
+    
+#hosts button {
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 3px;
+    margin-top: 2vh;
+}
+    
+#hosts button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+    
+#hosts h3 {
+    font-size: 20px;
+}
+    
+#hosts p {
+    font-size: 18px;
+}
+
+/* SERVIÇO SERVIDOR SAMBA
+*/
+
+#samba {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#samba h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#samba div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+#descsamba {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#samba input, textarea {
+    padding: 8px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#samba label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#samba label p {
+    text-align: left;
+}
+
+#samba button {
+    margin-top: 1vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#samba button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+#samba h3 {
+    font-size: 20px;
+}
+
+#samba p {
+    font-size: 18px;
+}
+
+/*
+SERVIÇOS NETPLAN MANUAL E AUTOMÁTICO (DHCP)
+*/
+
+#netplan {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#netplan h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#netplan div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+#descnetplan {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descnetplan ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#netplan input, textarea {
+    padding: 8px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#netplan label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#netplan label p {
+    text-align: left;
+}
+
+.radio {
+    font-size: 20px;
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    position: relative;
+    padding-left: 35px;
+    height: 2vh;
+    margin-left: -3vh;
+    margin-top: -5vh;
+    margin-bottom: -0.1vh;
+}
+
+.radio + .radio {
+    margin-left: -1.8vh;
+    margin-top: 3.8vh;
+    margin-bottom: 4vh;
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio span {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2.5px solid #7d2b51;
+    position: absolute;
+    left: -5px;
+    top: 2px;
+}
+
+.radio span:after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #7d2b51;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+#netplan button {
+    margin-top: 3vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#netplan button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+#netplan h3 {
+    font-size: 20px;
+}
+
+#netplan p {
+    font-size: 18px;
+}
+
+/*
+ICMP
+*/
+
+#icmp {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#icmp h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#icmp div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+#descicmp {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descicmp ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#icmp input, textarea {
+    padding: 8px;  
+    margin-bottom: 1.5em;
+    border: 1px solid;
+}
+
+#icmp label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#icmp label p {
+    text-align: left;
+}
+
+#icmp button {
+    margin-top: 3vh;
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#icmp button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+#icmp h3 {
+    font-size: 20px;
+}
+
+#icmp p {
+    font-size: 18px;
+}
+
+/*
+"CONTATO"
+*/
+
+#contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+}
+    
+#contato h2,
+#contato p {
+    width: 100%;
+}
+
+/*
+POLITICA DE PRIVACIDADE
+*/
+
+#descpolitica { 
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descpolitica ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* 
+TERMOS & CONDIÇÕES
+*/
+
+#desctermos { 
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#desctermos ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* QUEM SOMOS
+*/
+
+#descquem { 
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descquem ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descquem img {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    width: 80vh;
+    height: 50vh;
+    margin-left: -4vh;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+/* FAQ
+*/
+
+#descfaq {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#descfaq img {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    width: 80vh;
+    height: 60vh;
+    margin-left: -4vh;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    margin-top: -2vh;
+}
+
+#descfaq .TTL {
+    flex-direction: column;
+    text-align: left;
+    width: 120vh;
+    height: 60vh;
+    margin-left: -4vh;
+    margin-right: -0.5vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+#descfaq .initcloud {
+    flex-direction: column;
+    text-align: left;
+    object-fit: contain;
+    width: 100vh;
+    height: 60vh;
+    margin-left: -4vh;
+    margin-right: -0.5vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+/* AJUDA
+*/
+
+#ajuda {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#ajuda h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#ajuda div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+    margin-bottom: 5vh;
+}
+
+#descajuda {
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*#ajuda input, textarea {
+    padding: 10px;
+    margin-bottom: 1em;
+    
+}*/
+
+#ajuda input[type=checkbox] + label {
+    display:block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+#ajuda #ajudacaixa label {
+    margin-top: -4vh;
+}
+
+#ajuda input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+#ajuda input[type="checkbox"] + label:active:before {
+    transform: scale(0);
+
+}
+
+#ajuda input[type=checkbox]:checked + label:before {
+    background-color: mediumseagreen;
+    border-color: mediumseagreen;
+    color: #fff;
+}
+
+#ajuda input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid;
+}
+
+
+#ajuda label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#ajuda label p {
+    text-align: left;
+}
+
+#ajuda button {
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    color: #7d2b51;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+#ajuda button:hover {
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+#ajuda h3 {
+    font-size: 18px;
+}
+
+#ajuda p {
+    font-size: 18px;
+}
+
+/*#ajuda input, textarea {
+    padding: 5px;
+    margin-bottom: 1em;
+    
+}*/
+
+
+#ajuda h3 {
+    font-size: 18px;
+}
+
+#ajuda p {
+    font-size: 18px;
+}
+
+}
+
+/* FOOTER MEDIA 
+*/
+
+@media (max-width: 991px) {
+    footer {
+        padding: 30px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container p {
+        color: #999;
+        font-size: 18px;
+    }
+
+    footer .container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .quickLinks ul li a {
+        color: #999;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .sec.aboutus ul li a {
+        margin: 1.5vw;
+    }
+
+    footer .container .sec.aboutus, .quickLinks, .contact {
+        width: 100%;
+
+    }
+
+    { 
+    width: 100%;
+    }
+
+    .copyrightText {
+        padding: 8px 40px;
+    }
+
+     /* Margem entre carrosel e flooter */
+
+     .margem {
+        margin: -50px;
+    }
+}
